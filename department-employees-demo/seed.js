@@ -23,6 +23,8 @@ const generateDepartments = () => {
         const location = fakerDE.location.city();
         departments.push(new Department({name,location}))
     });
+
+    return departments;
 }
 
 const generateEmployees = (departments, amount=10)=>{
@@ -60,17 +62,6 @@ try {
     console.log(error);
     process.exit(1);
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 //console.log("Seed is läufttt!!")
