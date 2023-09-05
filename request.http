@@ -1,0 +1,36 @@
+@API_URL = http://localhost:5000
+
+@TOKEN = 
+
+Authorization : {{TOKEN}}
+
+### DEPARTMENT ROUTE +++
+GET {{API_URL}}/api/department
+
+### CATEGORIES ROUTE +++
+GET {{API_URL}}/api/employee
+
+
+### POST NEW PRODUCT ROUTE +++
+POST {{API_URL}}/api/department
+
+{
+
+    "name": "Aaa",
+    "location": "Deutschland"
+  
+}
+
+### POST NEW PRODUCT ROUTE +++
+POST {{API_URL}}/api/employee
+
+{
+
+    "name": "Aaa",
+    "email": "aaa@office.de",
+    "salary": 8000
+  
+}
+
+
+

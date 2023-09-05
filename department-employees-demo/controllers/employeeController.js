@@ -15,7 +15,7 @@ export const createEmployee = async(req, res) => {
 export const deleteEmployees = async(req, res) => {
     try {
         await Employee.deleteMany();
-        res.status(200).json({msg:"All departments removed!"});
+        res.status(200).json({msg:"All employees removed!"});
     } catch (error) {
         console.log({error});
         res.status(500).json({msg:"Server error!"});
