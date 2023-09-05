@@ -11,6 +11,9 @@ const departmentRouter = Router();
 
 departmentRouter
     .post("/department", departmentController.createDepartment)
+    .get("/departments", departmentController.getAllDepartments)
+    .get("/department/:id", departmentController.getOneDepartment)
     .delete("/department", departmentController.deleteDepartments)
+    .delete("/department/:id", departmentController.deleteOneDepartment)
 
 export default departmentRouter;

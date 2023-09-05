@@ -1,4 +1,4 @@
-import {fa, faker, tr } from "@faker-js/faker"
+import { faker } from "@faker-js/faker"
 import {fakerDE} from "@faker-js/faker"
 import"./lib/connect_db.js"
 import Department from "./models/department.js"
