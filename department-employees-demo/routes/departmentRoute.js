@@ -13,7 +13,9 @@ departmentRouter
     .post("/department", departmentController.createDepartment)
     .get("/departments", departmentController.getAllDepartments)
     .get("/department/:id", departmentController.getOneDepartment)
+    .patch("/department/:id", departmentController.updateOneDepartment)
     .delete("/department", departmentController.deleteDepartments)
     .delete("/department/:id", departmentController.deleteOneDepartment)
+   
 
 export default departmentRouter;

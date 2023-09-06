@@ -34,6 +34,15 @@ export const getOneDepartment = async(req, res) => {
     }
 }
 
+export const updateOneDepartment = async(req, res) => {
+    try {
+        const response = await Department.findByIdAndUpdate(req.params.id, req.body, {new:true});
+        res.status(200).json(response);
+    } catch (error) {
+        console.log({error});
+        res.status(500).json({msg:"Server error!"});
+    }
+};
 
 export const deleteDepartments = async(req, res) => {
     try {
